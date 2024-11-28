@@ -1,9 +1,9 @@
-# dune exec checker
+# dune build
 # OCAMLPARAM: unset
 # Shared cache: disabled
-# Shared cache location: /home/dltjrgh/.cache/dune/db
-# Workspace root: /media/4tb/seokho/checker
-# Auto-detected concurrency: 48
+# Shared cache location: /Users/dltjrgh/.cache/dune/db
+# Workspace root: /Users/dltjrgh/Documents/PSE/checker
+# Auto-detected concurrency: 8
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -11,12 +11,6 @@
 #  ; merlin = true
 #  ; fdo_target_exe = None
 #  ; build_dir = In_build_dir "default"
-#  ; installed_env =
-#      map
-#        { "INSIDE_DUNE" : "/media/4tb/seokho/checker/_build/default"
-#        ; "OCAML_COLOR" : "always"
-#        ; "OPAMCOLOR" : "always"
-#        }
 #  ; instrument_with = []
 #  }
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_449b70_output
+$ /Users/dltjrgh/.opam/4.14.0+flambda/bin/ocamlc.opt -config > /var/folders/zf/4s80_xwj0kz8ynfnk7tpspp40000gn/T/dune_232ff2_output
