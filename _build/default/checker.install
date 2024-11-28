@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/checker/META"
+  "_build/install/default/lib/checker/dune-package"
+  "_build/install/default/lib/checker/opam"
+]
+bin: [
+  "_build/install/default/bin/checker"
+]
