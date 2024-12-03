@@ -2,7 +2,7 @@
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /Users/dltjrgh/.cache/dune/db
-# Workspace root: /Users/dltjrgh/Documents/PSE/checker
+# Workspace root: /Users/dltjrgh/Documents/SymFuzz/checker
 # Auto-detected concurrency: 8
 # Dune context:
 #  { name = "default"
@@ -13,4 +13,8 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/dltjrgh/.opam/4.14.0+flambda/bin/ocamlc.opt -config > /var/folders/zf/4s80_xwj0kz8ynfnk7tpspp40000gn/T/dune_232ff2_output
+$ /Users/dltjrgh/.opam/5.2.0/bin/ocamlc.opt -config > /var/folders/1p/hg3zrgzd2fx5m9g4mwd4jj8h0000gn/T/dune_9cf528_output
+$ (cd _build/default && /Users/dltjrgh/.opam/5.2.0/bin/ocamldep.opt -modules -impl src/main.ml) > _build/default/src/.main.eobjs/dune__exe__Main.impl.d
+$ (cd _build/default && /Users/dltjrgh/.opam/5.2.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I src/.main.eobjs/byte -I /Users/dltjrgh/.opam/5.2.0/lib/ocaml/threads -I /Users/dltjrgh/.opam/5.2.0/lib/ocaml/unix -I /Users/dltjrgh/.opam/5.2.0/lib/z3 -I /Users/dltjrgh/.opam/5.2.0/lib/zarith -no-alias-deps -opaque -open Dune__exe -o src/.main.eobjs/byte/dune__exe__Main.cmo -c -impl src/main.ml)
+$ (cd _build/default && /Users/dltjrgh/.opam/5.2.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.main.eobjs/byte -I src/.main.eobjs/native -I /Users/dltjrgh/.opam/5.2.0/lib/ocaml/threads -I /Users/dltjrgh/.opam/5.2.0/lib/ocaml/unix -I /Users/dltjrgh/.opam/5.2.0/lib/z3 -I /Users/dltjrgh/.opam/5.2.0/lib/zarith -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o src/.main.eobjs/native/dune__exe__Main.cmx -c -impl src/main.ml)
+$ (cd _build/default && /Users/dltjrgh/.opam/5.2.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o src/main.exe /Users/dltjrgh/.opam/5.2.0/lib/zarith/zarith.cmxa -I /Users/dltjrgh/.opam/5.2.0/lib/zarith /Users/dltjrgh/.opam/5.2.0/lib/ocaml/unix/unix.cmxa /Users/dltjrgh/.opam/5.2.0/lib/ocaml/threads/threads.cmxa /Users/dltjrgh/.opam/5.2.0/lib/z3/z3ml.cmxa -I /Users/dltjrgh/.opam/5.2.0/lib/z3 src/.main.eobjs/native/dune__exe.cmx src/.main.eobjs/native/dune__exe__Main.cmx)

@@ -1,4 +1,0 @@
-(executable
- (public_name checker)
- (name main)
- (libraries checker))

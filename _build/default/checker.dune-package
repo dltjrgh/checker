@@ -1,4 +1,4 @@
 (lang dune 3.16)
 (name checker)
-(sections (lib .) (bin ../../bin))
-(files (lib (META dune-package opam)) (bin (checker)))
+(sections (lib .) (bin ../../bin) (doc ../../doc/checker))
+(files (lib (META dune-package)) (bin (checker)) (doc (README.md)))
